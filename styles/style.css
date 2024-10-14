@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=SUSE:wght@100..800&display=swap');
+
+.fascinate-font{
+    font-family: "Fascinate Inline", system-ui;
+}
+.suse-font{
+    font-family: "SUSE", system-ui;
+}
+input::placeholder{
+    color: rgb(209, 207, 207) !important;
+}
+/*---------------- nav style ---------------- */
+.hover-txt:hover{
+    color: rgb(193, 193, 9) !important;
+}
+.hover-txt:focus{
+    color: rgb(193, 193, 9) !important;
+}
+
+/*---------------- main style ---------------- */
+main .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ---------------- upcoming style ---------------- */
+main .upcoming{
+    width: 100%;
+    background-image: url(/image/upcoming-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ---------------- card style ---------------- */
+.card .image{
+    height: 450px;
+}
+
+.overflow-x-scroll::-webkit-scrollbar{
+    height: 8px;
+}
+.overflow-x-scroll::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    border-radius: 16px;
+}
+
+.overflow-x-scroll::-webkit-scrollbar-track{
+    background-color: grey;
+    border-radius: 16px;
+}
+/* -------------- Birghtness hover ----------------- */
+.brightness-hover:hover{
+    filter: brightness(115%);
+}
+
+
+/* ------------------ Offcanvas Resposive---------------- */
+@media (max-width: 576px) {
+   .offcanvas{
+     width: 85% !important;
+    }
+} 
+@media (min-width: 768px) {
+    main .hero{
+        width: 100%;
+        height: 80vh !important;
+    }
+ } 
+/* screen start from 1200 and up */
+@media (min-width: 1200px) {
+    .overflow-x-scroll{
+      overflow-x: hidden !important;
+    }
+    main .hero{
+        width: 100%;
+        height: 100vh !important;
+    }
+ } 
+
+ /* ----------------- Download Content ------------------------- */
+ main .download-content{
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url(/image/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: 0.3s ease-in-out;
+    outline: 2px dashed rgb(193, 193, 9);
+    outline-offset: 2px;
+ }
+ .hover-bg:hover{
+    background-color: rgb(193, 193, 9) !important;
+}
+
+/* --------------------- top rate style ------------------------------ */
+.top-rate {
+    width: 100%;
+    background-image: url(/image/top-rated-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ----------------------- Tv Series --------------------------------  */
+.tv-series{
+    width: 100%;
+    background-image: url(/image/tv-series-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ------------------------- Footer ---------------------------------- */
+.footer{
+    width: 100%;
+}
+.email{
+    width: 100%;
+    background-image: url(/image/email-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu{
+    width: 100%;
+    background-image: url(/image/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

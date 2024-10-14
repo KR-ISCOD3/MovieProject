@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <title>MVshow.Free-Movie</title>
+
+    <!-- boostrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- other link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    <div class="container-fluid p-0" id="top">
+    
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="" class="fs-3 navbar-brand text-light fascinate-font">
+            <i class="bi bi-film text-warning"></i>
+            MVshow
+          </a>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcan"
+          >
+            <i class="bi bi-list-nested text-light fs-3"></i>
+          </button>
+          <div class="d-none d-lg-block">
+            <ul class="nav justify-content-center text-uppercase">
+              <li>
+                <a
+                  href="#"
+                  class="hover-txt nav-link suse-font text-light fw-bold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover-txt nav-link suse-font text-light fw-bold"
+                  >Movie</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover-txt nav-link suse-font text-light fw-bold"
+                  >Tv Show</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover-txt nav-link suse-font text-light fw-bold"
+                  >Web Series</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover-txt nav-link suse-font text-light fw-bold"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <ul class="nav suse-font">
+              <li>
+                <a href="" class="nav-link text-light">
+                  <i class="bi bi-search border-end border-secondary pe-3"></i
+                ></a>
+              </li>
+              <li class="d-flex text-light align-items-center">
+                <i class="bi bi-translate text-warning"></i>
+                <select
+                  class="form-select border-0 shadow-none bg-transparent text-light"
+                >
+                  <option value="en" class="text-dark">EN</option>
+                  <option value="en" class="text-dark">KH</option>
+                </select>
+              </li>
+              <li>
+                <button
+                  class="btn btn-outline-warning rounded-5 text-light border-3 px-4"
+                >
+                  SIGN IN
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- offcanvas -->
+      <div class="offcanvas offcanvas-end d-lg-block bg-dark" id="offcan">
+        <div
+          class="offcanvas-header d-flex justify-content-between border-bottom"
+        >
+          <a href="" class="fs-3 navbar-brand text-light fascinate-font">
+            <i class="bi bi-film text-warning"></i>
+            MVshow
+          </a>
+          <button class="btn" data-bs-dismiss="offcanvas">
+            <i class="bi bi-x text-light fs-2"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body text-light p-0">
+          <div class="d-flex border-bottom px-4">
+            <div class="col-6">
+              <ul class="list-unstyled my-3">
+                <li>
+                  <a href="" class="nav-link text-light py-2 suse-font"
+                    >Home
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="nav-link text-light py-2 suse-font"
+                    >Movie</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="nav-link text-light py-2 suse-font"
+                    >Tv Show</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled my-3">
+                <li>
+                  <a href="" class="nav-link text-light py-2 suse-font"
+                    >Web Series
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="nav-link text-light py-2 suse-font"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex align-items-center px-3 border my-3">
+            <i class="bi bi-search fs-4"></i>
+            <input
+              type="text"
+              class="form-control bg-transparent border-0 shadow-none text-light"
+              placeholder="Search..."
+            />
+          </div>
+          <div class="d-flex justify-content-between border-top p-4">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Language
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">KH</a></li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn btn-outline-warning text-light px-4">
+                SIGN IN
+                <i class="bi bi-person-circle mx-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <main>
+        <!-- hero content -->
+        <div class="hero">
+          <div class="container">
+            <div class="col-md-6" style="padding: 250px 0">
+              <div class="d-grid align-content-center suse-font">
+                <h3 class="text-warning fw-bold">MVShow</h3>
+                <h1
+                  class="text-light fw-bold"
+                  style="font-size: clamp(40px, 5vw, 65px)"
+                >
+                  Unlimited <span class="text-warning auto-type"></span>
+                  <br>Is in Our MVshow
+                </h1>
+                <div class="row fw-bold">
+                  <div class="col-12 col-lg-6 d-flex align-items-center my-2">
+                    <span class="px-1 mb-0 text-bg-light border border-2 me-1"
+                      >PG 18</span
+                    >
+                    <span class="px-3 mb-0 border border-2 text-light me-3"
+                      >HD</span
+                    >
+                    <a href="#" class="hover-txt me-1 nav-link text-light">
+                      Romance,</a
+                    >
+                    <a href="#" class="hover-txt me-1 nav-link text-light me-4">
+                      Drama</a
+                    >
+                  </div>
+                  <div class="col-12 col-lg-6 d-flex align-items-center my-2">
+                    <span class="text-light"
+                      ><i class="bi bi-calendar-week text-warning mx-2"></i
+                      >2024</span
+                    >
+                    <span class="text-light mx-2"
+                      ><i class="bi bi-alarm text-warning mx-2"></i>128
+                      min</span
+                    >
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <button class="btn btn-outline-warning rounded-5 px-4 fs-3">
+                    <i class="bi bi-play-fill"></i>Watch Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- upcoming content -->
+        <div class="upcoming container-fluid p-0">
+          <div class="container py-5">
+            <div class="row m-0 suse-font">
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start"
+              >
+                <div class="d-grid align-content-center">
+                  <p class="m-0 text-warning m-auto m-sm-0">Online Streaming</p>
+                  <h2 class="m-0 text-light m-auto m-sm-0 fw-bold">
+                    Upcoming Movie
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end my-4"
+              >
+                <div class="nav suse-font">
+                  <button
+                    class="btn rounded-5 bg-dark text-light mx-2 px-3 active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#movies"
+                  >
+                    Movies
+                  </button>
+                  <button
+                    class="btn rounded-5 bg-dark text-light mx-2 px-3"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tvshow"
+                  >
+                    Tv Show
+                  </button>
+                  <button
+                    class="btn rounded-5 bg-dark text-light mx-2 px-3"
+                    data-bs-toggle="tab"
+                    data-bs-target="#anime"
+                  >
+                    Anime
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane show active" id="movies">
+                <div
+                  class="d-flex justify-content-between overflow-x-scroll mt-3 pb-2"
+                >
+                  <!-- card 1 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie1.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            The Northman
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">8.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie2.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Doctor Strange
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">126 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie3.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Memory
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie4.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            The Unbearable
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tvshow">
+                <div
+                  class="d-flex justify-content-between overflow-x-scroll mt-3 pb-2"
+                >
+                  <!-- card 1 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie5.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Madam Web
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie6.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            ENDS
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">138 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">9.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie7.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Helloween
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie8.webp"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Man of Steal
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="anime">
+                <div
+                  class="d-flex justify-content-between overflow-x-scroll mt-3 pb-2"
+                >
+                  <!-- card 1 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime1.webp"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Your Name
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">120 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">8.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image//anime2.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Black Clover
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">140min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">7.5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime3.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Maboroshi
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">7.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div
+                    class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 animate__animated animate__zoomIn"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime4.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            A Whisker Away
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">105min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download Content -->
+        <div class="download-content container-fluid p-0">
+          <div class="container">
+            <div class="row m-0 p-md-5">
+              <div data-aos="zoom-in-left" class="col-lg-6 pt-3 p-md-5" >
+                <img src="image/HD4Kimage.jpg" alt="" class="w-100">
+              </div>
+              <div data-aos="zoom-in-right" class="col-lg-6 pt-3 suse-font p-md-5">
+                <p class="text-light border-start border-warning ps-2">
+                  Our Services
+                </p>
+                <h1 class="fw-bold text-light">
+                  Download Your Shows Watch Offline.
+                </h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet, consecetur adipiscing elseddo
+                  eiusmod tempor.There are many variations of passages of lorem
+                  Ipsum available, but the majority have suffered alteration in
+                  some injected humour.
+                </p>
+                <div class="d-flex mt-4">
+                  <div class="icon hover-bg col-4">
+                    <i class="bi bi-tv-fill fs-1 text-light"></i>
+                  </div>
+                  <div class="px-3  col-8 text-light">
+                    <h4>Enjoy on Your TV.</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="d-flex pt-4" style="border-top:1px dashed white ;">
+                  <div class="icon hover-bg col-4">
+                    <i class="bi bi-camera-video-fill fs-1 text-light"></i>
+                  </div>
+                  <div class="px-3  col-8 text-light">
+                    <h4>Watch Everywhere.</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Top Rate movie -->
+         <div class="top-rate container-fluid bg-danger p-0 py-4">
+          <div class="container py-4 p-0">
+            <div  data-aos="fade-up" class="text-center">
+                <span class="text-uppercase fw-bold text-warning ">Online Streaming</span>
+                <h2 class="text-light suse-font fw-bold mt-2">Top Rated Movies</h2>
+                <div class="mt-4 px-4">
+                  <button class="btn text-light fw-bold bg-black border-0 px-2 m-2 fs-6 py-3">MOVIES</button>
+                  <button class="btn text-light fw-bold bg-black border-0 px-2 m-2 fs-6 py-3">TV SHOWS</button>
+                  <button class="btn text-light fw-bold bg-black border-0 px-2 m-2 fs-6 py-3">DOCUMENTARY</button>
+                  <button class="btn text-light fw-bold bg-black border-0 px-2 m-2 fs-6 py-3">SPORTS</button>
+                </div>
+            </div>
+            <div class="row m-0 justify-content-start mt-3 pb-2 p-3">
+                  <!-- card 1 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="100"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie5.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Madam Web
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="200"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie6.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            ENDS
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">138 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="300"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie7.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Helloween
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="400"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie8.webp"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Man of Steal
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- card 5 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="200"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime1.webp"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Madam Web
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 6 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="300"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime2.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            ENDS
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">138 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 7 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="400"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie3.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Helloween
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 8 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="500"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/anime4.jpg"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Man of Steal
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+          </div>
+         </div>
+
+         <!-- tv-series -->
+         <div class="tv-series container-fluid bg-danger p-0 py-4">
+          <div class="container py-4 p-0">
+            <div  data-aos="fade-up" class="text-center">
+                <span class="text-uppercase fw-bold text-warning ">Best TV Series</span>
+                <h2 class="text-light suse-font fw-bold mt-2">World Best TV Series</h2>
+            </div>
+            <div class="row m-0 justify-content-start mt-3 pb-2 p-3">
+                  <!-- card 1 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="100"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie9.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Halo
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">137 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="200"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie10.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Vahalla
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >2K</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">138 min</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="300"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie11.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            Heist
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 4 -->
+                  <div
+                  data-aos="zoom-in"
+                  data-aos-delay="400"  
+                  class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-3"
+                  >
+                    <div class="card overflow-hidden border-0 bg-transparent">
+                      <div class="image bg-secondary">
+                        <img
+                          src="image/movie8.png"
+                          class="w-100 h-100 object-fit-cover brightness-hover"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-body p-0 d-flex">
+                        <div class="col-6 suse-font text-light">
+                          <h6
+                            class="fw-bold my-4 hover-txt"
+                            style="
+                              transition: 0.3s ease-in-out;
+                              cursor: pointer;
+                            "
+                          >
+                            MoonLight
+                          </h6>
+                          <span
+                            class="px-2 py-1 mb-0 border border-2 me-3 fw-bold text-warning"
+                            style="font-size: 10px"
+                            >HD</span
+                          >
+                        </div>
+                        <div
+                          class="col-6 suse-font text-end"
+                          style="height: 15vh"
+                        >
+                          <h6 class="fw-bold my-4 text-warning">2024</h6>
+                          <i class="bi bi-alarm text-warning"></i>
+                          <span class="text-light fs-6">N/A</span>
+                          &emsp;
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <span class="text-light fs-6">NR</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+         </div>
+
+         
+      </main>
+
+      <!-- footer content -->
+      <div class="footer">
+            <div class="email container-fluid">
+              <div class="container py-5">
+                <div class="row m-0 justify-content-between m-0 container">
+                  <div class="col-12 col-md-6 px-md-5 d-grid align-content-center" >
+                    <h2 class=" suse-font fw-bold text-center text-md-start">Trial start first 30 days.</h2>
+                    <p class="suse-font text-center text-md-start">Enter your email to create or restart your membership.</p>
+                  </div>
+                  <div class="col-12 col-md-6  px-md-5 d-grid align-content-center" >
+                    <div class=" d-flex border bg-light shadow">
+                        <input type="text" placeholder="Enter your email" class="form-control rounded-0 bg-transparent border-0 shadow-none suse-font p-3">
+                        <button class="btn bg-warning text-light rounded-0 px-4 px-md-5"> <i class="bi bi-send-fill fs-3"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           <div class="menu container-fluid bg-black">
+            <div class="container">
+              <div class="row m-0 container">
+                <div class="col-12 col-md-6  py-4 text-center text-md-start" >
+                  <a href="" class="fs-2 navbar-brand text-light fascinate-font ">
+                    <i class="bi bi-film text-warning"></i>
+                    MVshow
+                  </a>
+                </div>
+                <div class="col-12 col-md-6  py-4" >
+                  <ul class="nav justify-content-center justify-content-md-end text-uppercase">
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt nav-link suse-font text-light fw-bold"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt nav-link suse-font text-light fw-bold"
+                        >Movie</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt nav-link suse-font text-light fw-bold"
+                        >Tv Show</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt nav-link suse-font text-light fw-bold"
+                        >Web Series</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt nav-link suse-font text-light fw-bold"
+                        >Pricing</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6  py-4" >
+                  <ul class="nav justify-content-center justify-content-md-start text-uppercase">
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link ps-0 suse-font text-light"
+                        >Faq</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link suse-font text-light"
+                        >Help center</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link suse-font text-light"
+                        >Terms of use</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link suse-font text-light"
+                        >Privacy</a
+                      >
+                    </li>
+                   
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6  py-4" >
+                  <ul class="nav justify-content-center justify-content-md-end text-uppercase">
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link p-2 suse-font text-light"
+                        ><i class="bi bi-facebook"></i></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="hover-txt fs-6 nav-link p-2  suse-font text-light"
+                        ><i class="bi bi-messenger"></i></a
+                      >
+                    </li>    
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="container-fluid " style="background-color: #1d1d1d;">
+            <div class="container">
+              <div class="row m-0 container">
+                <div class="col-12 col-md-6 py-3 text-center text-md-start" >
+                  <span class="text-light suse-font">© 2024 <span class="text-warning">codebyme </span> All Rights Reserved</span>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center  justify-content-md-end" >
+                    <img src="image/footer-bottom-img.png" alt="">
+                </div>
+              </div>
+  
+            </div>
+           </div>
+      </div>
+
+      <div style="
+      width: 60px;
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      cursor: pointer;
+      display: grid;
+      place-content: center;" class="bg-warning rounded-circle m-3">
+       <a href="#top" class="text-dark fw-bold fs-3">
+        <i class="bi bi-caret-up-fill "></i>
+       </a>
+      </div>
+
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFzQ49leHRuA2FlbQIxMAABHYbb7I3hK-ffDv49QFJet42Jk1ebBCBfkHNEYYaHZp5JjIDV-KARpve0jA_aem_nTJL6o5rW9plZ1tsewC8cA"></script>
+  <script>
+    AOS.init();
+
+    var typed = new Typed('.auto-type', {
+        
+        strings: ['Movies,', 'TV Shows,', 'Anime,'],
+        typeSpeed: 130,
+        backSpeed: 130,
+        loop: true,
+      });
+
+    const navbar = document.querySelector("#navbar");
+    navbar.style.padding = "24px 0 ";
+    window.onscroll = function (e) {
+      const scrolvalue = window.scrollY;
+      console.log(scrolvalue);
+
+      var scroll = 120;
+      if (window.scrollY >= scroll) {
+        navbar.style.backgroundColor = "#1d1d1d";
+        navbar.style.padding = "16px 0";
+        navbar.style.transition = "0.3s";
+      } else if (window.scrollY < scroll) {
+        navbar.style.backgroundColor = "transparent";
+        navbar.style.padding = "24px 0 ";
+        navbar.style.transition = "0.3s";
+      }
+    };
+  </script>
+</html>
